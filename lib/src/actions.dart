@@ -170,7 +170,7 @@ class SlidableAction extends StatelessWidget {
   final double spacing;
 
   /// A label to display below the [icon].
-  final String? label;
+  final Widget? label;
 
   /// Padding of the OutlinedButton
   final BorderRadius borderRadius;
@@ -196,10 +196,11 @@ class SlidableAction extends StatelessWidget {
       }
 
       children.add(
-        Text(
-          label!,
-          overflow: TextOverflow.ellipsis,
-        ),
+        label!
+        // Text(
+        //   label!,
+        //   overflow: TextOverflow.ellipsis,
+        // ),
       );
     }
 
